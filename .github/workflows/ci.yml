@@ -1,30 +1,19 @@
-name: Release
 on:
   push:
     branches:
-      - master
+      - main
 
 permissions:
-  contents: read  # for checkout
+  contents: write
+  pull-requests: write
+
+name: release-please
 
 jobs:
-  release:
-    name: Release
+  release-please:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      issues: write  # to be able to comment on released issues
-      pull-requests: write  # to be able to comment on released pull requests
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - uses: google-github-actions/release-please-action@v3
         with:
-          fetch-depth: 0
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: "lts/*"
-      - name: Release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx semantic-release
+          release-type: simple
+          package-name: better-folds.nvim
