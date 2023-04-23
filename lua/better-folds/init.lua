@@ -1,7 +1,7 @@
 local M = {}
 
 function M.setup()
-	vim.notify("hello")
+	vim.opt.foldtext = 'v:lua.require("better-folds.folds").foldtext()'
 end
 
 return M
