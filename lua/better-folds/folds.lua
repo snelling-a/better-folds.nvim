@@ -1,8 +1,6 @@
 local right = ""
 local l = "ℓ"
 
---  [9ℓ]: text_from_the_first_line  󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼󰇼
-
 local M = {}
 
 function M.foldtext()
